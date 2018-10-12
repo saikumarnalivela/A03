@@ -1,0 +1,36 @@
+<% include header %>
+<section class = "aside-header333">
+    <aside>
+         <div class="sideImage">
+           <img src="images/myimage.jpg" alt="mimage" class="rounded-circle" style="width:300px;height:300px;">
+         </div>
+    </aside>
+</section>
+<div id = "sai">
+<form class = "formwith">
+  First name:
+  <input type="text" name="firstname">
+  Last name:<br>
+  <input type="text" name="lastname">
+  <br>Gender : 
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  Please help in helping you if you have any querry: <br>
+  <input type="text" name="write something"><br>
+  <br>
+  <br>
+  <!-- <input id = "demo" type="submit" value="Submit"> -->
+  <button onclick="myFunction()">Submit </button>
+  <script>
+  function myFunction() {
+        window.alert("you details are submitted")}
+  </script>
+</form>
+</div>
+<div class = "hmmm"> 
+<h5><a href="https://www.linkedin.com/in/sai-nalivela-25382892/">Visit my linkedin profile</a><img src="images/linkedin.jpg" alt="Smiley face" width="50" height="50"></h5>
+<h5><a href="https://www.facebook.com/sai.nalivela">Visit my Facebook profile</a><img src="images/facebook.png" alt="Smiley face" width="50" height="50"></h5>
+<h5><a href="https://github.com/saikumarnalivela">Visit my Github page</a></h5>
+<h5><a href="https://bitbucket.org/sainalivela/">Visit my Bitbucket Page </a></h5>
+</div>
+<% include footer %>

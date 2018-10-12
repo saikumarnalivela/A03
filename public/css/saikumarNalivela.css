@@ -1,0 +1,151 @@
+
+body{
+    background-color: white;
+}
+h1{text-align: center ; color: blue }
+h4{
+    font-size: 1rem;
+}
+.aside-header {
+    float: right;
+    height: 50; 
+}
+div{
+    text-align: center;
+}
+
+.rounded-circle {
+    width: 320px;
+    height: 320px;
+}
+header{background-color: lightsalmon ; font-size: medium ; font-family: 'Times New Roman', Times, serif}
+footer{clear:both;background-color:rgb(100, 237, 141) ;font-size: medium; text-align: center;font-style: italic}
+.section-header{
+    color: blue;
+    font-family: cursive;
+    font-size: medium
+
+}
+.sideImage{
+     background-image:url("bgg.jpg");
+}
+
+.aside-header {
+    float: right;
+}
+    
+.hobbies-header{
+    
+background-color: rgb(119, 162, 69);
+
+border-style: ridge;
+
+float: left;
+
+width: 1020px;
+}
+
+#schedule-header{
+    
+background-color: #45A29E;
+
+border-style: ridge;
+
+float: left;
+
+width: 1020px;
+
+}
+#past-section {
+
+    background-color: #66FCF1;
+    
+    float: left;
+    
+    width: 1020px;
+    
+    border-style: ridge;
+    
+}
+   
+   
+    
+    
+#future-section {
+    
+    background-color: #c5c6c7;
+    
+    float: left;
+    
+    width: 1020px;
+    
+    border-style: ridge;
+    
+}
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: repeat(auto-fit, 100px);
+}
+
+body div.mycalc {
+	text-align: center;
+	width: 214px;
+	margin: 0 auto;
+}
+
+div input[type='button'], button {
+	width: 50px;
+	height: 50px;
+	margin: 2px 0;
+}
+
+div input[type="text"] {
+	height: 50px;
+	width: 100%;
+	background-color: #999;
+	color: #fff;
+	padding: 12px 20px;
+    margin-top: 100px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #777;
+}
+
+div.results input, div.results button {
+	height: 50px;
+	width: 104px;
+}
+
+div.results button {
+	background-color: rgb(43, 255, 0);
+	color: #fff;
+	border: 1px solid rgb(0, 255, 85);
+}
+
+div.results input {
+	background-color: #0228fd;
+	color: #fff;
+	border: 1px solid #02fdf0;
+}
+
+#plus, #minus, #by, #devide, #percent {
+	background-color: rgb(0, 119, 128);
+	color: #fff;
+	border: 1px solid rgb(0, 128, 128);
+	font-size: 16px;
+}
+.aside-header333{
+    float: right;       
+}
+    
+#sai{
+    float: left;
+    text-align: center;
+    
+}
+.hmmm{
+    float: right;
+}
