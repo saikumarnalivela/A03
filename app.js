@@ -4,7 +4,7 @@ const logger = require("morgan")
 const bodyParser = require("body-parser") // simplifies access to request body
 const fs = require('fs')  // NEW - this is required
 const app = express()  // make express app
-const http = require('http').Server(app)  // inject app into the server
+//const http = require('http').Server(app)  // inject app into the server
 
 // ADD THESE COMMENTS AND IMPLEMENTATION HERE 
 // 1 set up the view engine
@@ -73,7 +73,7 @@ app.post("/contact", function (req, res) {
  
   // logs to the terminal window (not the browser)
   console.log('\nCONTACT FORM DATA: ' + name + ' ' + email + ' ' + comment + '\n');
-  //})
+  })
   // 6 this will execute for all unknown URIs not specifically handled
 app.get(function (req, res) {
   res.render("404")
@@ -83,4 +83,3 @@ app.get(function (req, res) {
  app.listenp(process.env.PORT || 8081, function () {
   console.log('Web app started and listening on http://localhost:8081' )
  })
-})  
