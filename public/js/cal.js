@@ -1,5 +1,8 @@
 function takeValue(x) {
 	document.getElementById('inputwindow').value += x;
+	if(typeof x !== 'number'){
+		throw error('The given value is not a number');
+	}
 }
 
 function clearInput(y) {

@@ -15,4 +15,14 @@ Run node app.js to start the server.  (Hit CTRL-C to stop.)
 > node app.js
 ```
 
-Point your browser to `http://localhost:8081`. 
+Point your browser to `http://localhost:8081`.
+
+
+we have pushed the code to heroku server host
+commands:
+
+1 . heroku
+2 . heroku login
+3 . heroku create
+4 . heroku logs --tail
+5 . heroku restart

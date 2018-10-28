@@ -56,6 +56,9 @@ app.get("/", function (req, res) {
  })
 // 5 http POST /contact
 app.post("/contact", function (req, res) {
+  var api_key = 'a584ef2521670c3e7c1cb4b72854e5de-4836d8f5-c4d3ae47';
+        var domain = 'sandbox23ca2e15728b4da7a2c54cc6d2d15089.mailgun.org';
+        var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
   const name = req.body.inputname;
   const email = req.body.inputemail;
   const company = req.body.inputcompany;
@@ -63,17 +66,24 @@ app.post("/contact", function (req, res) {
   const isError = true;
  
   // setup e-mail data with unicode symbols
-  const mailOptions = {
-    from: '"Denise Case" <denisecase@gmail.com>', // sender address
-    to: 'dcase@nwmissouri.edu, denisecase@gmail.com', // list of receivers
-    subject: 'Message from Website Contact page', // Subject line
-    text: comment,
-    err: isError
-  }
+  var data = {
+    from: 'mail from <postmaster@sandbox23ca2e15728b4da7a2c54cc6d2d15089.mailgun.org>',
+    to: 'sainalivela@gmail.com',
+    subject: 'Mail to praise your work',
+    text: 'Testing some Mailgun awesomeness!'
+  };
+  
  
+  mailgun.messages().send(data, function (error, body) {
+    console.log(body);
+    if(!error)
+    res.send('data has been recored')
+    else
+    res.send('bye!!')
   // logs to the terminal window (not the browser)
-  console.log('\nCONTACT FORM DATA: ' + name + ' ' + email + ' ' + comment + '\n');
-  })
+  //console.log('\nCONTACT FORM DATA: ' + name + ' ' + email + ' ' + comment + '\n');
+  });      
+})
   // 6 this will execute for all unknown URIs not specifically handled
 app.get(function (req, res) {
   res.render("404")
