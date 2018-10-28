@@ -77,7 +77,7 @@ app.post("/contact", function (req, res) {
   // 6 this will execute for all unknown URIs not specifically handled
 app.get(function (req, res) {
   res.render("404")
- })
+ }) 
  
  // Listen for an application request on designated port
  app.listen(port, function () {
