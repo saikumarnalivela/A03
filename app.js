@@ -91,5 +91,5 @@ app.get(function (req, res) {
  
  // Listen for an application request on designated port
  app.listen(process.env.PORT || 8081, function () {
-  console.log('Web app started and listening on http://localhost:8081' )
+  console.log('Web app started and listening on http://localhost:8081')
  })
